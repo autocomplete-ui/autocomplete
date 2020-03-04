@@ -1,0 +1,13 @@
+.operator {
+    padding: 4px 8px;
+    cursor: pointer;
+    margin: 2px;
+    font-family: Open Sans;
+    font-weight: bold;
+    border: 1px solid rgba(153, 153, 153, 0.23);
+    font-size: 15px;
+    color: white;
+    border-radius: 14px;
+    background: linear-gradient( 90deg, rgba(173, 173, 173, 0.75) 0.66%, rgba(176, 176, 176, 0.75) 92.6% );
+    user-select: none;
+}

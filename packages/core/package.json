@@ -1,0 +1,21 @@
+{
+  "name": "@autocomplete/core",
+  "scope": "@autocomplete",
+  "version": "1.0.0",
+  "description": "Autocomplete core lib",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "autocomplete",
+    "react",
+    "material-ui"
+  ],
+  "author": "Moshe Kabala",
+  "license": "MIT",
+  "dependencies": {
+    "@storex/core": "^1.1.10"
+  }
+}

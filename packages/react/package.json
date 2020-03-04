@@ -1,0 +1,26 @@
+{
+  "name": "@autocomplete/react",
+  "scope": "@autocomplete",
+  "version": "1.0.0-alpha.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moshe Kabala",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "@storex/core": "^1.1.10",
+    "@storex/react": "1.1.10",
+    "compute-scroll-into-view": "^1.0.13",
+    "@autocomplete/core": "1.0.0-alpha.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "jest": "25.1.0",
+    "ts-jest": "^25.2.1",
+    "@types/jest": "^25.1.3"
+  }
+}

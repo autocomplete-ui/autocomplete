@@ -1,0 +1,8 @@
+{
+    "packages": [
+        "./packages/core",
+        "./packages/react",
+        "./packages/material-ui" 
+    ],
+    "version": "1.0.0-alpha.0"
+}
