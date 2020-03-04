@@ -23,7 +23,6 @@ require("./style/style.css");
 const core_1 = require("@material-ui/core");
 const react_1 = require("@autocomplete/react");
 const common_1 = require("./common");
-const emptyAny = {};
 const w = core_1.withStyles;
 let MultiAutocomplete = class MultiAutocomplete extends React.Component {
     constructor(props) {
@@ -124,7 +123,7 @@ let MultiAutocomplete = class MultiAutocomplete extends React.Component {
                                 switch (value.type) {
                                     case 'operator': {
                                         return (React.createElement(core_1.Tooltip, { title: "Click to change operator" },
-                                            React.createElement("div", { className: "operator", onClick: () => onOperatorClick && onOperatorClick(value) }, value.operator && value.operator.toUpperCase())));
+                                            React.createElement("div", { className: classes.operator, onClick: () => onOperatorClick && onOperatorClick(value) }, value.operator && value.operator.toUpperCase())));
                                     }
                                     default: {
                                         if (!_displayChip[key]) {

@@ -130,7 +130,9 @@ class AutocompleteLogic extends common_1.BaseAutocompleteLogic {
         };
         this.onBlur = (e) => __awaiter(this, void 0, void 0, function* () {
             setTimeout(() => __awaiter(this, void 0, void 0, function* () {
-                if (this.args.selectOnBlur && this.state.inputValue && !this.state.value) {
+                if (this.args.selectOnBlur &&
+                    this.state.inputValue &&
+                    !this.state.value) {
                     if (!(yield this.addValueByInputText()) && this.args.requireMatch) {
                         // if required match remove the query
                         this.updateInputValue("");

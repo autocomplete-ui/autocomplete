@@ -15,6 +15,18 @@ export declare const styles: (theme: any) => {
         color: string;
         margin: string;
     };
+    operator: {
+        padding: string;
+        cursor: string;
+        margin: number;
+        fontWeight: string;
+        border: string;
+        fontSize: number;
+        color: string;
+        borderRadius: number;
+        background: string;
+        userSelect: string;
+    };
     paper: {
         zIndex: number;
         maxHeight: number;

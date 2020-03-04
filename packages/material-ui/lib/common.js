@@ -29,6 +29,18 @@ exports.styles = theme => ({
         color: "gray",
         margin: `${theme.spacing(0.5)}px ${theme.spacing(0.25)}px`
     },
+    operator: {
+        padding: "4px 8px",
+        cursor: "pointer",
+        margin: 2,
+        fontWeight: "bold",
+        border: "1 solid rgba(153, 153, 153, 0.23)",
+        fontSize: 15,
+        color: "white",
+        borderRadius: 14,
+        background: "linear-gradient( 90deg, rgba(173, 173, 173, 0.75) 0.66%, rgba(176, 176, 176, 0.75) 92.6% )",
+        userSelect: "none",
+    },
     paper: {
         zIndex: 2,
         maxHeight: 256,
