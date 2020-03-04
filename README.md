@@ -100,7 +100,7 @@ const options = [
 
 const getOptions = (q: string)=> {
     let query = new RegExp(q);
-    return options.filter(query.test);
+    return options.filter(o => query.test(o));
 }
 
 

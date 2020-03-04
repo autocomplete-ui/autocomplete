@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Close } from "@material-ui/icons";
-import './style/style.css'
+
 import {
   Chip,
   LinearProgress,

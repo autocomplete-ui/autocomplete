@@ -2,7 +2,7 @@
   "name": "autocomplete",
   "scripts": {
     "build": "lerna bootstrap && lerna run build",
-    "publish": "npm run build && lerna publish --no-git-reset"
+    "release": "npm run build && lerna publish --no-git-reset"
   },
   "devDependencies": {
     "lerna": "^3.20.2"

@@ -1,12 +1,13 @@
 {
   "name": "@autocomplete/core",
   "scope": "@autocomplete",
-  "version": "0.0.9",
+  "version": "0.0.17",
   "description": "Autocomplete core lib",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "release": "npm publish && npm version patch"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
