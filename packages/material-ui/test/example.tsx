@@ -51,7 +51,6 @@ const options = [
     "Czechia",
     "Côte",
     "Democratic",
-    "Democratic",
     "Denmark",
     "Djibouti",
     "Dominica",
@@ -77,7 +76,6 @@ const options = [
     "Grenada",
     "Guatemala",
     "Guinea",
-    "Guinea",
     "Guyana",
     "Haiti",
     "Honduras",
@@ -89,7 +87,7 @@ const options = [
 
 const getOptions = (q: string)=> {
     let query = new RegExp(q);
-    return options.filter(query.test);
+    return options.filter((o)=>query.test(o));
 }
 
 

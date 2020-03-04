@@ -9,7 +9,8 @@ export const styles = theme => ({
   },
   container: {
     position: "relative",
-    flexGrow: 1
+    // todo: maybe some time we need that (right now this make the container hight bigger)
+    // flexGrow: 1
   },
   chipPlaceholder: {
     background: "transparent",
