@@ -44,7 +44,6 @@ export class Popper extends React.Component<PopperProps> {
         top = undefined;
         bottom = winSize - elemRect.y;
       }
-
       return { top, bottom };
     }
     return {};
@@ -74,7 +73,7 @@ export class Popper extends React.Component<PopperProps> {
       </div>
     );
   }
-  
+
   componentDidUpdate() {
     this.changeHandler(undefined);
   }
