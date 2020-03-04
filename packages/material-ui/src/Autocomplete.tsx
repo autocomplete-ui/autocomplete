@@ -17,7 +17,6 @@ import {
   AutocompleteWrapperProps
 } from "@autocomplete/react";
 
-
 export interface IAtutocompleteProps extends AutocompleteWrapperProps {
   classes?;
   inputProps?: React.HTMLProps<HTMLInputElement>;
@@ -117,43 +116,43 @@ export class Autocomplete extends React.Component<IAtutocompleteProps, any> {
           const suggestions = customDisplayOptions
             ? customDisplayOptions({ options, valueMap, inputValue })
             : (options || []).map((option, index) => {
-                const display = optionToDisplay(option);
-                const key = optionToKey(option);
-                if (
-                  typeof display !== "string" &&
-                  typeof display !== "number" &&
-                  !React.isValidElement(display)
-                ) {
-                  throw new Error(
-                    "[Autocomplete]:: The display of option is invalid please add optionToDisplay function prop to Autocomplete. ( e.g. optionToDisplay={(o)=> o.title} )"
-                  );
-                }
-                if (typeof key !== "string" && typeof key !== "number") {
-                  throw new Error(
-                    "[Autocomplete]:: The key of option is invalid please add optionToKey function prop to Autocomplete. ( e.g. optionToKey={(o)=> o.key} )"
-                  );
-                }
-                if (valueMap.has(key) && !displaySelectedOptions) {
-                  // if alrady selected ignore it
-                  return null;
-                }
-                return customDisplayOption
-                  ? customDisplayOption({
-                      option: option,
-                      index,
-                      isSelected: valueMap.has(key),
-                      itemProps: wrapperOptionProps(key),
-                      markedOptionIndex,
-                      valueMap
-                    })
-                  : renderOption({
-                      option: { key, display },
-                      index,
-                      itemProps: wrapperOptionProps(key),
-                      markedOptionIndex,
-                      valueMap
-                    });
-              });
+              const display = optionToDisplay(option);
+              const key = optionToKey(option);
+              if (
+                typeof display !== "string" &&
+                typeof display !== "number" &&
+                !React.isValidElement(display)
+              ) {
+                throw new Error(
+                  "[Autocomplete]:: The display of option is invalid please add optionToDisplay function prop to Autocomplete. ( e.g. optionToDisplay={(o)=> o.title} )"
+                );
+              }
+              if (typeof key !== "string" && typeof key !== "number") {
+                throw new Error(
+                  "[Autocomplete]:: The key of option is invalid please add optionToKey function prop to Autocomplete. ( e.g. optionToKey={(o)=> o.key} )"
+                );
+              }
+              if (valueMap.has(key) && !displaySelectedOptions) {
+                // if alrady selected ignore it
+                return null;
+              }
+              return customDisplayOption
+                ? customDisplayOption({
+                  option: option,
+                  index,
+                  isSelected: valueMap.has(key),
+                  itemProps: wrapperOptionProps(key),
+                  markedOptionIndex,
+                  valueMap
+                })
+                : renderOption({
+                  option: { key, display },
+                  index,
+                  itemProps: wrapperOptionProps(key),
+                  markedOptionIndex,
+                  valueMap
+                });
+            });
 
           const isOptionsOpen = !!(isOpen && getOptions && suggestions);
           // console.log("isOpen", isOpen); 
@@ -212,13 +211,13 @@ export class Autocomplete extends React.Component<IAtutocompleteProps, any> {
                       {suggestions.length
                         ? suggestions
                         : !isOptionsLoading &&
-                          inputValue && (
-                            <MenuItem>
-                              <Typography>
-                                {noResultsContent || this.noResultsText}
-                              </Typography>
-                            </MenuItem>
-                          )}
+                        inputValue && (
+                          <MenuItem>
+                            <Typography>
+                              {noResultsContent || this.noResultsText}
+                            </Typography>
+                          </MenuItem>
+                        )}
                     </Paper>
                   )}
                 </Popper>

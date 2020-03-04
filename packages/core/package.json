@@ -21,5 +21,6 @@
   "license": "MIT",
   "dependencies": {
     "@storex/core": "^1.1.10"
-  }
+  },
+  "gitHead": "baae01692d85d560b2c7e80ced173b52d1168471"
 }

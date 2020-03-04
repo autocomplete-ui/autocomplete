@@ -148,7 +148,11 @@ export class AutocompleteLogic extends BaseAutocompleteLogic<Value> {
 
   onBlur = async e => {
     setTimeout(async () => {
-      if (this.args.selectOnBlur && this.state.inputValue && !this.state.value) {
+      if (
+        this.args.selectOnBlur &&
+        this.state.inputValue &&
+        !this.state.value
+      ) {
         if (!(await this.addValueByInputText()) && this.args.requireMatch) {
           // if required match remove the query
           this.updateInputValue("");
@@ -219,7 +223,7 @@ export class AutocompleteLogic extends BaseAutocompleteLogic<Value> {
   };
 
   updateValue(value) {
-    this._updateValue(value)
+    this._updateValue(value);
     const { inputValue } = this.state;
     // update the input value
     if (!value && inputValue) {
@@ -247,11 +251,14 @@ export class AutocompleteLogic extends BaseAutocompleteLogic<Value> {
     this.state.value = value;
     this.state.valueMap.clear();
     this.state.valueMap.set(key, value);
-    let val = value
+    let val = value;
     try {
-      val = this.valueToDisplay(value)
+      val = this.valueToDisplay(value);
     } catch (err) {
-      console.error("[autocomplete] Failed to translate the value to display ", err)
+      console.error(
+        "[autocomplete] Failed to translate the value to display ",
+        err
+      );
     }
     this._changeInputValue(val);
   }

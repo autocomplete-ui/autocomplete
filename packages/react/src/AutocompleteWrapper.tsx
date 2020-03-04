@@ -39,7 +39,7 @@ export interface AutocompleteWrapperProps
 export class AutocompleteWrapper extends React.Component<
   AutocompleteWrapperProps,
   any
-> {
+  > {
   autoLogic: BaseAutocompleteLogic<any>;
   refMap = new Map();
   inputRef;

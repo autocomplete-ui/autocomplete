@@ -1,6 +1,5 @@
 {
   "name": "autocomplete",
-  "private": true,
   "scripts": {
     "build": "lerna bootstrap && lerna run build"
   },
