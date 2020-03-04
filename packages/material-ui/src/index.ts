@@ -1,2 +1,2 @@
-export * from "./Autocomplete";
 export * from "./MultiAutocomplete";
+export * from "./Autocomplete";
