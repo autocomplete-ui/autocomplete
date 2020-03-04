@@ -13,12 +13,12 @@ import {
   withStyles,
   Tooltip
 } from "@material-ui/core";
-import { Popper, AutocompleteWrapper,
-  AutocompleteWrapperProps } from "@autocomplete/react";
+import {
+  Popper, AutocompleteWrapper,
+  AutocompleteWrapperProps
+} from "@autocomplete/react";
 
 import { renderInput, renderOption, styles } from "./common";
-
-const emptyAny: any = {};
 
 export interface IMultiAutocompleteProps extends AutocompleteWrapperProps {
   classes?;
@@ -233,13 +233,13 @@ any
                     onFocus: () => (this.inputInFocus = true),
                     onBlur: () => (this.inputInFocus = false),
                     startAdornment: [
-                      ...Array.from(valueMap.keys()).map((key:string) => {
+                      ...Array.from(valueMap.keys()).map((key: string) => {
                         const value = valueMap.get(key);
                         switch (value.type) {
                           case 'operator': {
                             return (
                               <Tooltip title="Click to change operator">
-                                <div className="operator" onClick={() => onOperatorClick && onOperatorClick(value)}>
+                                <div className={classes.operator} onClick={() => onOperatorClick && onOperatorClick(value)}>
                                   {value.operator && value.operator.toUpperCase()}
                                 </div>
                               </Tooltip>
