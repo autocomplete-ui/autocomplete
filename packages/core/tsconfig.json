@@ -3,6 +3,7 @@
         "outDir": "./lib/",
         "sourceMap": true,
         "declaration": true,
+        "skipLibCheck": true,
         "module": "commonjs",
         "experimentalDecorators": true,
         "target": "es6",

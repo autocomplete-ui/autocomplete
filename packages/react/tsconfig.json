@@ -1,14 +1,13 @@
 {
-    "compilerOptions": {
-        "outDir": "./lib/",
-        "sourceMap": true,
-        "declaration": true,
-        "module": "commonjs",
-        "experimentalDecorators": true,
-        "target": "es6",
-        "jsx": "react",
-    },
-    "include": [
-        "./src/**/*"
-    ]
+  "compilerOptions": {
+    "outDir": "./lib/",
+    "sourceMap": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "target": "es6",
+    "jsx": "react"
+  },
+  "include": ["./src/**/*"]
 }
