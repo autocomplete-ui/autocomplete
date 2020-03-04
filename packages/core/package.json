@@ -8,6 +8,10 @@
     "build": "tsc",
     "test": "jest"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/autocomplete-ui/autocomplete"
@@ -22,5 +26,5 @@
   "dependencies": {
     "@storex/core": "^1.1.10"
   },
-  "gitHead": "baae01692d85d560b2c7e80ced173b52d1168471"
+  "gitHead": "ba04f15641f0e332f7f7418b1923999532aa079c"
 }

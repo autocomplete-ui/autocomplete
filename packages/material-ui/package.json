@@ -12,6 +12,10 @@
     "type": "git",
     "url": "https://github.com/autocomplete-ui/autocomplete"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "author": "Moshe Kabala",
   "license": "MIT",
   "dependencies": {
@@ -26,5 +30,5 @@
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   },
-  "gitHead": "baae01692d85d560b2c7e80ced173b52d1168471"
+  "gitHead": "ba04f15641f0e332f7f7418b1923999532aa079c"
 }
