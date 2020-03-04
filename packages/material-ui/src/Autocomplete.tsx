@@ -23,7 +23,6 @@ export interface IAtutocompleteProps extends AutocompleteWrapperProps {
   inputProps?: React.HTMLProps<HTMLInputElement>;
   // downshiftProps?: DownshiftProps<any>;
   // todo
-  getOptions: any;
   error?: boolean;
   style?;
   helperText?: string;

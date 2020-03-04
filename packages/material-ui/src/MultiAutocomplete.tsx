@@ -32,7 +32,6 @@ export interface IMultiAutocompleteProps extends AutocompleteWrapperProps {
   chipPlaceholder?: string;
   // downshiftProps?: DownshiftProps<any>;
   //todo
-  getOptions: any
   error?: boolean;
   chipPlaceholderIcon?: any;
   style?;

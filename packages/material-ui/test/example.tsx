@@ -1,11 +1,5 @@
-# @Autocomplete/material-ui
-Using the react library to implements autocomplete with material-ui library (the most popular material-design with react) 
-
-@ Deceleration
-Still under construction
-
-## example
-```typescript
+import * as React from "react";
+import { Autocomplete } from "../src"
 
 
 const options = [
@@ -110,5 +104,3 @@ const Comp = () => {
         query={text}
     />
 }
-
-```
