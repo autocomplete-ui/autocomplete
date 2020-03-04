@@ -4,7 +4,6 @@ import {
   LinearProgress,
   MenuItem,
   Paper,
-  TextField,
   Typography,
   withStyles
 } from "@material-ui/core";
@@ -16,14 +15,15 @@ import { renderInput, renderOption, styles } from "./common";
 import {
   AutocompleteWrapper,
   AutocompleteWrapperProps
-} from "@autocomplete/react/AutocompleteWrapper";
+} from "@autocomplete/react";
 
-const emptyAny: any = {};
 
 export interface IAtutocompleteProps extends AutocompleteWrapperProps {
   classes?;
   inputProps?: React.HTMLProps<HTMLInputElement>;
   // downshiftProps?: DownshiftProps<any>;
+  // todo
+  getOptions: any;
   error?: boolean;
   style?;
   helperText?: string;

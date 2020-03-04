@@ -51,7 +51,7 @@ export class AutocompleteWrapper extends React.Component<
       : new AutocompleteLogic();
     this.autoLogic.onMarkedOptionChange(this.markedChangeHandler);
     this.autoLogic.onEnter(this.blurInput);
-    this.autoLogic.initArgs(this.props);
+    this.autoLogic.initArgs(props);
   }
 
   blurInput = () => {

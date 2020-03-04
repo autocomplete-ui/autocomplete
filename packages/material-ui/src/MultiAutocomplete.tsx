@@ -13,11 +13,9 @@ import {
   withStyles,
   Tooltip
 } from "@material-ui/core";
-import { Popper } from "./Popper";
-import {
-  AutocompleteWrapper,
-  AutocompleteWrapperProps
-} from "./AutocompleteWrapper";
+import { Popper, AutocompleteWrapper,
+  AutocompleteWrapperProps } from "@autocomplete/react";
+
 import { renderInput, renderOption, styles } from "./common";
 
 const emptyAny: any = {};
@@ -33,6 +31,8 @@ export interface IMultiAutocompleteProps extends AutocompleteWrapperProps {
   customDisplayChip?: { [key: string]: ({ value, key }) => any };
   chipPlaceholder?: string;
   // downshiftProps?: DownshiftProps<any>;
+  //todo
+  getOptions: any
   error?: boolean;
   chipPlaceholderIcon?: any;
   style?;
@@ -234,7 +234,7 @@ any
                     onFocus: () => (this.inputInFocus = true),
                     onBlur: () => (this.inputInFocus = false),
                     startAdornment: [
-                      ...Array.from(valueMap.keys()).map(key => {
+                      ...Array.from(valueMap.keys()).map((key:string) => {
                         const value = valueMap.get(key);
                         switch (value.type) {
                           case 'operator': {
