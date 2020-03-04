@@ -6,10 +6,9 @@ Still under construction
 
 ## example
 ```typescript
-
+import {Autocomplete} from "@autocomplete/material-ui"
 
 const options = [
-
     "Afghanistan",
     "Albania",
     "Algeria",
